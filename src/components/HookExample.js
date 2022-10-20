@@ -16,7 +16,7 @@ export const HookExample = () => {
     useEffect(() => {
         console.log(`HOOK. Компонент обновился...`)
         document.title = `Вы нажали ${count} раз`
-    },[])
+    },)
 
     return (
         <div>
