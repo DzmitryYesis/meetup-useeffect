@@ -3,7 +3,7 @@ import {useEffect, useState} from "react";
 export const HookExample = () => {
 
     const [count, setCount] = useState(0)
-    const [name, setName] = useState('')
+    const [name, setName] = useState('test')
 
     const increment = () => {
         setCount(count + 1)
@@ -13,10 +13,11 @@ export const HookExample = () => {
         setName(event.target.value)
     }
 
+
     useEffect(() => {
         console.log(`HOOK. Компонент обновился...`)
         document.title = `Вы нажали ${count} раз`
-    },)
+    },[])
 
     return (
         <div>

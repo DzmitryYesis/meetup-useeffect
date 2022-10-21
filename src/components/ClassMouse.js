@@ -19,12 +19,13 @@ export class ClassMouse extends Component {
             xPos: event.clientX,
             yPos: event.clientY
         })
-        console.log('Mose move')
+        console.log('CLASS Mose move')
     }
 
     componentWillUnmount() {
         window.removeEventListener('mousemove', this.handleMouseMove)
     }
+
 
     render() {
         return (
